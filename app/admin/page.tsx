@@ -1,7 +1,7 @@
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { createClient } from '@supabase/supabase-js'
-import { isAdminAuth, getAdminCookieName } from '@/lib/adminAuth'
+import { isAdminAuth, getAdminCookieName } from '../../lib/adminAuth'
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL || '',
