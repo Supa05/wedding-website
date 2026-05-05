@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Gallery() {
   const images = [
     'https://via.placeholder.com/400x300/FFB6C1/FFFFFF?text=Wedding+Photo+1',
@@ -15,7 +17,14 @@ export default function Gallery() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {images.map((src, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src={src} alt={`Wedding photo ${index + 1}`} className="w-full h-64 object-cover" />
+              <Image
+                src={src}
+                alt={`Wedding photo ${index + 1}`}
+                width={400}
+                height={300}
+                className="w-full h-64 object-cover"
+                unoptimized
+              />
             </div>
           ))}
         </div>
