@@ -1,0 +1,59 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "group": "build",
+      "presentation": {
+        "panel": "shared"
+      },
+      "isBackground": true,
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "label": "npm: dev",
+      "detail": "next dev"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "presentation": {
+        "panel": "shared"
+      },
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "label": "npm: build",
+      "detail": "next build"
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "group": "build",
+      "presentation": {
+        "panel": "shared"
+      },
+      "isBackground": true,
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "label": "npm: start",
+      "detail": "next start"
+    },
+    {
+      "type": "npm",
+      "script": "lint",
+      "group": "build",
+      "presentation": {
+        "panel": "shared"
+      },
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "label": "npm: lint",
+      "detail": "next lint"
+    }
+  ]
+}
