@@ -9,7 +9,7 @@ const supabase = createClient(
 )
 
 export default async function AdminPage() {
-  const adminCookie = cookies().get(getAdminCookieName())?.value
+  const adminCookie = (await cookies()).get(getAdminCookieName())?.value
   if (!isAdminAuth(adminCookie)) {
     redirect('/admin/login')
   }
