@@ -89,7 +89,7 @@ export default function Home() {
                 </p>
 
                 <h3 className="mt-2 text-xl font-semibold text-gray-800">
-                  Authority Global&apos;s Church
+                  Authority Global Church
                 </h3>
 
                 <p className="mt-1 text-gray-600">

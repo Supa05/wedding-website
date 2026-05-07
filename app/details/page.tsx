@@ -7,16 +7,16 @@ export default function Details() {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h2 className="text-2xl font-semibold text-gray-700 mb-4">Ceremony</h2>
-              <p className="text-gray-600 mb-2"><strong>Date:</strong> May 15, 2026</p>
+              <p className="text-gray-600 mb-2"><strong>Date:</strong> October 17, 2026</p>
               <p className="text-gray-600 mb-2"><strong>Time:</strong> 4:00 PM</p>
-              <p className="text-gray-600 mb-2"><strong>Location:</strong> St. Mary&apos;s Church</p>
-              <p className="text-gray-600">123 Main Street, Anytown, USA</p>
+              <p className="text-gray-600 mb-2"><strong>Location:</strong> Authority Global Church</p>
+              <p className="text-gray-600">25 Temple Street, Accra, Ghana</p>
             </div>
             <div>
               <h2 className="text-2xl font-semibold text-gray-700 mb-4">Reception</h2>
               <p className="text-gray-600 mb-2"><strong>Time:</strong> 6:00 PM</p>
-              <p className="text-gray-600 mb-2"><strong>Location:</strong> Grand Ballroom Hotel</p>
-              <p className="text-gray-600">456 Oak Avenue, Anytown, USA</p>
+              <p className="text-gray-600 mb-2"><strong>Location:</strong> SupaTech 5star Hotel</p>
+              <p className="text-gray-600">456 Lagos Avenue, Accra, Ghana</p>
             </div>
           </div>
           <div className="mt-8">
