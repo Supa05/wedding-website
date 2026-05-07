@@ -59,9 +59,9 @@ export default function Home() {
 
     {/* Desktop Menu */}
     <nav className="hidden items-center gap-6 md:flex">
-      <a href="/" className="text-gray-700 hover:text-rose-500">
+      <Link href="/" className="text-gray-700 hover:text-rose-500">
         Home
-      </a>
+      </Link>
 
       <a href="#details" className="text-gray-700 hover:text-rose-500">
         Details
@@ -93,13 +93,13 @@ export default function Home() {
     <div className="border-t bg-white px-6 py-4 md:hidden">
       <div className="flex flex-col gap-4">
 
-        <a
+        <Link
           href="/"
           className="text-gray-700"
           onClick={() => setMenuOpen(false)}
         >
           Home
-        </a>
+        </Link>
 
         <a
           href="#details"
