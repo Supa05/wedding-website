@@ -50,84 +50,84 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-b from-pink-100 via-white to-rose-50">
       
       {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          
-          <h1 className="text-3xl font-bold text-gray-900">
-            Supatech & Richie
-          </h1>
+<header className="sticky top-0 z-50 border-b bg-white/90 backdrop-blur">
+  <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
 
-          {/* Desktop Menu */}
-          <nav className="hidden items-center gap-6 md:flex">
-            <Link href="/" className="text-gray-700 hover:text-rose-500">
-              Home
-            </Link>
+    <h1 className="text-3xl font-bold text-gray-900">
+      Supatech & Richie
+    </h1>
 
-            <a href="#details" className="text-gray-700 hover:text-rose-500">
-              Details
-            </a>
+    {/* Desktop Menu */}
+    <nav className="hidden items-center gap-6 md:flex">
+      <a href="/" className="text-gray-700 hover:text-rose-500">
+        Home
+      </a>
 
-            <a href="#gallery" className="text-gray-700 hover:text-rose-500">
-              Gallery
-            </a>
+      <a href="#details" className="text-gray-700 hover:text-rose-500">
+        Details
+      </a>
 
-            <a
-              href="#rsvp"
-              className="rounded-full bg-rose-500 px-5 py-2 font-semibold text-white hover:bg-rose-600"
-            >
-              RSVP
-            </a>
-          </nav>
+      <a href="#gallery" className="text-gray-700 hover:text-rose-500">
+        Gallery
+      </a>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="text-3xl text-gray-700 md:hidden"
-          >
-            ☰
-          </button>
-        </div>
+      <a
+        href="#rsvp"
+        className="rounded-full bg-rose-500 px-5 py-2 font-semibold text-white hover:bg-rose-600"
+      >
+        RSVP
+      </a>
+    </nav>
 
-        {/* Mobile Dropdown Menu */}
-        {menuOpen && (
-          <div className="border-t bg-white px-6 py-4 md:hidden">
-            <div className="flex flex-col gap-4">
-              
-              <Link
-                href="/"
-                className="text-gray-700"
-                onClick={() => setMenuOpen(false)}
-              >
-                Home
-              </Link>
+    {/* Mobile Menu Button */}
+    <button
+      onClick={() => setMenuOpen(!menuOpen)}
+      className="text-3xl text-gray-700 md:hidden"
+    >
+      ☰
+    </button>
+  </div>
 
-              <a
-                href="#details"
-                className="text-gray-700"
-                onClick={() => setMenuOpen(false)}
-              >
-                Details
-              </a>
+  {/* Mobile Dropdown */}
+  {menuOpen && (
+    <div className="border-t bg-white px-6 py-4 md:hidden">
+      <div className="flex flex-col gap-4">
 
-              <a
-                href="#gallery"
-                className="text-gray-700"
-                onClick={() => setMenuOpen(false)}
-              >
-                Gallery
-              </a>
+        <a
+          href="/"
+          className="text-gray-700"
+          onClick={() => setMenuOpen(false)}
+        >
+          Home
+        </a>
 
-              <a
-                href="#rsvp"
-                className="rounded-full bg-rose-500 px-4 py-2 text-center font-semibold text-white"
-                onClick={() => setMenuOpen(false)}
-              >
-                RSVP
-              </a>
-            </div>
-          </div>
-        )}
-      </header>
+        <a
+          href="#details"
+          className="text-gray-700"
+          onClick={() => setMenuOpen(false)}
+        >
+          Details
+        </a>
+
+        <a
+          href="#gallery"
+          className="text-gray-700"
+          onClick={() => setMenuOpen(false)}
+        >
+          Gallery
+        </a>
+
+        <a
+          href="#rsvp"
+          className="rounded-full bg-rose-500 px-4 py-2 text-center font-semibold text-white"
+          onClick={() => setMenuOpen(false)}
+        >
+          RSVP
+        </a>
+      </div>
+    </div>
+  )}
+</header>
 
       {/* MAIN CONTENT */}
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-6 py-16">
